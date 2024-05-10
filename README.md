@@ -13,7 +13,7 @@ Documenttation will improve, this is just scratching details down while I work.
 To Install the Grafana Infinity plugin:
 - log into Grafana
 - Add New Connection from hamburger menu on left
-- search Grafana Infinity
+- search `Grafana Infinity`
 - Select plugin
 - click Install
 
@@ -21,15 +21,16 @@ To add the Sonarr API data source:
 - log into Grafana
 - Data sources
 - Add New Data source
-- Name: Sonarr v3 JSON API ((OR your own name. This datasource will only work with this Sonarr instance, as the API auth is required in a header.))
-- Search/select Grafana Infinity
-- Ignore Main tab w/ Setup Authentication button
-- Autnetication tab; No auth
-- Headers & URL params
---- Add Custom HTTP Header; Key: `X-Api-Key`  Value: ((Your Sonarr API Key))
+- Name: `Sonarr v3 JSON API` ((OR your own name. This datasource will only work with this Sonarr instance, as the API auth is required in a header.))
+- Search/select `Grafana Infinity`
+- Ignore Main tab
+- Autnetication tab; API Key Value Pair
+--- Key: `X-Api-Key`  Value: ((Your Sonarr API Key))
 - Security
 --- Add your Sonarr URL under Allowed Hosts. Include protocol, IP/hostname, and port. Ex: `http://192.168.33.33:8989`
 - Health check
---- Add your Sonarr URL with the path `/api/v3/health` appended. Ex: `http://192.168.33.33:8989/api/v3/health`
+--- Add the path `/ping`
+- Misc
+--- Base URL should be set to the same URL as you entered under Allowed Hosts. Ex: `http://192.168.33.33:8989`
 - Save & Test
 
