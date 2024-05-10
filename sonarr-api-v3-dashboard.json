@@ -220,7 +220,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "http://192.168.201.102:8989/api/v3/calendar",
+          "url": "/api/v3/calendar",
           "url_options": {
             "data": "",
             "method": "GET",
@@ -308,6 +308,6 @@
   "timezone": "browser",
   "title": "Sonarr Dashboard",
   "uid": "edl8779rw7e9se",
-  "version": 5,
+  "version": 6,
   "weekStart": ""
 }
